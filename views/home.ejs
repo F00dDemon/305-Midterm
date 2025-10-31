@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orion Airlines</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/stylesheet.css" >
+    <!-- Favicon -->
+    <link rel="icon" href="images/plane.png">
+    <!-- Quicksand Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <!-- Javascript -->
+    <script src="scripts/javascript.js" defer></script>
+</head>
+<body>
+    <main>
+        <div id="flight-body">
+
+             <div class="hero-image">
+                <img src="images/beach.jpg">
+                <div class="hero-text">
+                    <h1>Book Your Dream Vacation</h1>
+                </div>
+            </div> 
+        
+            <form id="flight-form" action="submit-flight" method="post">
+                <label for="destination"><h3>Destination</h3></label>
+                <span id="err-dest" class="error">Please select a destination!</span>
+                <select id="flight-list" name="flights">
+                    <option value="none">Choose a Destination</option>
+                    <option value="az">Meadview, Arizona</option>
+                    <option value="jp">Tokyo, Japan</option>
+                    <option value="wa">Seattle, Washington</option>
+                    <option value="phil">Cebu, Philippines</option>
+                    <option value="ny">New York City, New York City</option>
+                </select>
+                <br>
+                <label for="departure"><h3>Departure Date</h3></label>
+                <span id="err-depart" class="error">Please select a date!</span>
+                <input type="date" id="departure" name="departure">
+                <br>
+                <label for="numtravelers"><h3>Number of Travelers</h3></label>
+                <span id="err-trav" class="error">Please enter a valid number!</span>
+                <input type="text" id="numtravelers" name="numtravelers">
+
+                <button type="submit" id="book-button">Find My Vacation</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <small>GitHub Repository: <a href="https://github.com/F00dDemon/305-Midterm">https://github.com/F00dDemon/305-Midterm</a></small>
+    </footer>
+</body>
+</html>
